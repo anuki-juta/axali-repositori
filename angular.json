@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "axali"
+  "defaultProject": "axali",
+  "cli": {
+    "analytics": "27a8e51a-a910-497d-a323-f5b3bcd2cd00"
+  }
 }
