@@ -20,6 +20,8 @@ import { DateFormatgPipe } from './date-formatg.pipe';
 import { IvyGalleryModule } from 'angular-gallery';
 import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { FilterPipe } from './filter.pipe';
+import { PickComponent } from './pick/pick.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { DirectiveComponent } from './directive/directive.component';
     MyPipePipe,
     DateFormatgPipe,
     ImageGalleryComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    FilterPipe,
+    PickComponent
   ],
 
   imports: [
@@ -45,6 +49,7 @@ import { DirectiveComponent } from './directive/directive.component';
     HttpClientModule,
     FormsModule ,
    IvyGalleryModule
+
   ],
   providers: [UsersServiceService],
   bootstrap: [AppComponent]

@@ -15,11 +15,24 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink= "/directive" routerLinkActive="active">directive</a>
-      </li> <li class="nav-item">
+      </li> 
+      <li class="nav-item">
         <a class="nav-link" routerLink= "/gallery" routerLinkActive="active">gallery</a>
-      </li> <li class="nav-item">
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink= "/pick" routerLinkActive="active">picture</a>
+      </li>
+       <li class="nav-item">
         <a class="nav-link" routerLink= "/grid" routerLinkActive="active">grid</a>
       </li>
     </ul>
   </nav>
+  <div class="md-form">
+    <input type="search" [(ngModel)]="searchText" placeholder="Search text">
+  </div>
+  <ul *ngFor="let data of dataset | filter: searchText ">
+    <li>{{data}}</li>
+  </ul>
+
+  
 <router-outlet></router-outlet>

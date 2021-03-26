@@ -10,10 +10,10 @@ export class ImageGalleryComponent implements OnInit {
 word = 0 ;
   constructor(private gallery: Gallery) { }
 imagesArray = [
-{path :'assets/images/12.jpg', index: 0 },
-{path :'assets/images/23.jpg', index: 1 },
-{path :'assets/images/234.jpg', index: 2 },
-{path :'assets/images/4043.jpg', index: 3 },
+{path :'assets/image/12.jpg', index: 0 },
+{path :'assets/image/23.jpg', index: 1 },
+{path :'assets/image/234.jpg', index: 2 },
+{path :'assets/image/4043.jpg', index: 3 },
 ];
 
 
@@ -22,10 +22,10 @@ imagesArray = [
 showGallery(index : number){
 let prop = { 
   images: [ 
-{ path : 'assets/images/12.jpg'},
-{ path : 'assets/images/23.jpg'},
-{ path : 'assets/images/234.jpg'},
-{ path : 'assets/images/4043.jpg'}
+{ path : 'assets/image/12.jpg'},
+{ path : 'assets/image/23.jpg'},
+{ path : 'assets/image/234.jpg'},
+{ path : 'assets/image/4043.jpg'}
 ],
   index
 };

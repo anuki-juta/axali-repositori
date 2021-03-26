@@ -5,6 +5,7 @@ import { CenterContentComponent } from './center-content/center-content.componen
 import { DirectiveComponent } from './directive/directive.component';
 import { GridComponent } from './grid/grid.component';
 import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
+import { PickComponent } from './pick/pick.component';
 import { PipeExampleComponent } from './pipe-example/pipe-example.component';
 import { UserSearchComponent } from './user-search/user-search.component';
 import { UsersComponent } from './users/users.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'search', component: UserSearchComponent},
   {path: 'tags', component: AnchorTagsComponent},
  {path: 'gallery', component: ImageGalleryComponent},
+ {path: 'pick', component: PickComponent},
   {path: 'center', component: CenterContentComponent},
   {path: 'grid', component: GridComponent},
   {path: 'pipe', component: PipeExampleComponent},
