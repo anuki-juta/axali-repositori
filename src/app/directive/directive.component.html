@@ -1,0 +1,16 @@
+<p>directive works!</p>
+<ul>
+    <li *ngFor="let item of stringArray; let i = index">
+<p *ngIf="(i%2==0)">{{item}}</p>
+    <p *ngIf="(i%2==1)" style ="color:red">{{item}}
+</p>
+</li>
+</ul>
+
+<ul>
+    <li *ngFor="let item of stringArray2; let i = index">
+<p *ngIf="!hasA(item)">{{item}}</p>
+    <p *ngIf="hasA(item)" style ="color:red">{{item}}
+</p>
+</li>
+</ul>

@@ -1,0 +1,15 @@
+#videoBackground {
+ 
+    min-width: 100%;
+    min-height: 100%;
+    bottom: 0;
+    }
+    
+    .content{
+        position: fixed;
+        bottom: 0;
+        color: rgb(0, 215, 243);
+        width: 100%;
+        padding-left: 50px;
+        padding-bottom:  50px;
+    }

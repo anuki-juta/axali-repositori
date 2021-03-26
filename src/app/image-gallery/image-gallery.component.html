@@ -1,0 +1,6 @@
+
+
+
+   <img width="150px" *ngFor="let images of imagesArray;"
+     src="{{images.path}}"
+     (click)="showGallery(images.index)"/>

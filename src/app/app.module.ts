@@ -17,9 +17,13 @@ import { GridComponent } from './grid/grid.component';
 import { PipeExampleComponent } from './pipe-example/pipe-example.component';
 import { MyPipePipe } from './my-pipe.pipe';
 import { DateFormatgPipe } from './date-formatg.pipe';
+import { IvyGalleryModule } from 'angular-gallery';
+import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
+import { DirectiveComponent } from './directive/directive.component';
 
 @NgModule({
   declarations: [
+  
     AppComponent,
     UsersComponent,
     PipeExampleComponent,
@@ -30,7 +34,9 @@ import { DateFormatgPipe } from './date-formatg.pipe';
     UserSearchComponent,
     VideoBackgroundComponent,
     MyPipePipe,
-    DateFormatgPipe
+    DateFormatgPipe,
+    ImageGalleryComponent,
+    DirectiveComponent
   ],
 
   imports: [
@@ -38,7 +44,7 @@ import { DateFormatgPipe } from './date-formatg.pipe';
     AppRoutingModule,
     HttpClientModule,
     FormsModule ,
-   
+   IvyGalleryModule
   ],
   providers: [UsersServiceService],
   bootstrap: [AppComponent]
