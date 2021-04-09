@@ -1,14 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
+import { EmailComponent } from './email/email.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadComponent } from './head/head.component';
 import { UsersComponent } from './users/users.component';
 import { UsersServiceService } from './users-service.service';
-import { FormsModule } from '@angular/forms';
+
 import { VideoBackgroundComponent } from './video-background/video-background.component';
 import { UserSearchComponent } from './user-search/user-search.component';
 import { CenterContentComponent } from './center-content/center-content.component';
@@ -22,11 +25,14 @@ import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { FilterPipe } from './filter.pipe';
 import { PickComponent } from './pick/pick.component';
+import { FormreactiveComponent } from './formreactive/formreactive.component';
+
 
 @NgModule({
   declarations: [
   
     AppComponent,
+    EmailComponent,
     UsersComponent,
     PipeExampleComponent,
     HeadComponent,
@@ -40,7 +46,8 @@ import { PickComponent } from './pick/pick.component';
     ImageGalleryComponent,
     DirectiveComponent,
     FilterPipe,
-    PickComponent
+    PickComponent,
+    FormreactiveComponent
   ],
 
   imports: [
@@ -48,7 +55,8 @@ import { PickComponent } from './pick/pick.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule ,
-   IvyGalleryModule
+   IvyGalleryModule,
+   ReactiveFormsModule 
 
   ],
   providers: [UsersServiceService],

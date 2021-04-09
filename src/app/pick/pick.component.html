@@ -1,1 +1,43 @@
 <p>pick works!</p>
+<form name="myForm" class="form-horizontal margin_auto form-wrap">
+    <div class="form-group">
+
+        <div class="col-sm-12">
+            <input type="text" name="userFirstName" ng-model="firstName" ng-minlength="5" ng-maxlength="20" ng-pattern="[a-zA-Z]"
+                   class="form-control"  placeholder="Имя" required >
+            <div ng-messages="myForm.userFirstName.$error">
+                <div class="errormesage" ng-message="required">This field is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+
+        <div class="col-sm-12">
+            <input name="userEmail" type="email" size="50" ng-model="email"
+                   class="form-control required email" name="email" placeholder="E-mail"
+                   required>
+            <div ng-messages="myForm.userEmail.$error">
+                <div class="errormesage" ng-message="required">This field is required</div>
+                <div class="errormesage" ng-message="email">Your email address is invalid</div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+
+        <div class="col-sm-12">
+            <textarea type="text" name="userMessage" ng-model="message" class="form-control" ng-minlength="10" ng-maxlength="500"
+                      placeholder="Сообщение" rows="6"
+                      required ></textarea>
+            <div ng-messages="myForm.userMessage.$error" ng-if="myForm.userMessage.$dirty">
+                <div class="errormesage" ng-message="required">This field is required</div>
+                <div class="errormesage" ng-message="minlength">Message must be over 100 characters</div>
+                <div class="errormesage" ng-message="maxlength">Message must not exceed 1000 characters</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary send-btn">Отправить</button>
+    </div>
+
+</form>

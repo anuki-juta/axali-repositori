@@ -1,0 +1,49 @@
+
+
+    <div class="container">
+   
+        <div class="alert alert-warning" role="alert" *ngIf="showError">
+          <strong>ERROR!</strong>  {{errorText}}
+        </div>
+      <div *ngIf="success">
+      
+       <div  class="thanks">
+        <div class="alert alert-success" role="alert" *ngFor="let student of studentsArray" >
+          <img src="assets/image/tu.webp" alt="thank u" style="float: right; width:500px; height: 70px;">
+          <strong>Welcome    {{student.name}}!</strong> <br>
+          you have been saved  tour  <strong>   {{student.tour}}. </strong> <br>
+          <p>Your ticket ID {{student.id}}</p>
+      
+          
+        </div>
+      </div>
+     
+    </div>
+      <br>
+     
+       
+          <form [formGroup]="studentsForm" (ngSubmit)="saveStudent()" *ngIf = "form">
+        
+           
+          <div class="col-4">
+          <label for="id">Id:</label>
+          <input formControlName="idControl" name="id" class="form-control" [attr.disabled]="true" type="number">
+      
+          <label for="name">Name:</label>
+          <input formControlName="nameControl" name="name"  class="form-control" type="text" >
+      
+          <label for="email">email:</label>
+          <input formControlName="lastNameControl" name="email" class="form-control" type="text">
+     
+          <label for="year">Age:</label>
+          <input formControlName="ageControl" name="age" class="form-control"  type="number">
+      
+          <label for="color">Tour:</label>
+          <select   class="form-control"  formControlName="tourControl">
+              <option value="" > --აირჩიე--</option>
+              <option  *ngFor="let tour of tours" [value]="tour" > {{tour}}</option>
+          </select>
+          <button class="btn btn-primary" type="submit">click</button>
+          </div>
+      </form>
+  </div>

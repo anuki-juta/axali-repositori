@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { AnchorTagsComponent } from './anchor-tags/anchor-tags.component';
 import { CenterContentComponent } from './center-content/center-content.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { EmailComponent } from './email/email.component';
+import { FormreactiveComponent } from './formreactive/formreactive.component';
 import { GridComponent } from './grid/grid.component';
 import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
 import { PickComponent } from './pick/pick.component';
@@ -21,7 +23,9 @@ const routes: Routes = [
  {path: 'pick', component: PickComponent},
   {path: 'center', component: CenterContentComponent},
   {path: 'grid', component: GridComponent},
+  {path: 'email', component: EmailComponent},
   {path: 'pipe', component: PipeExampleComponent},
+  {path: 'formreactive', component: FormreactiveComponent},
   {path: '', redirectTo: 'video', pathMatch: 'full'} 
 
 ];
